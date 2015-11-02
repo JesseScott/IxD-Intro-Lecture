@@ -24,6 +24,7 @@
 
 <body ng-controller="AppController">
 
+  <!-- MASTER -->
   <ons-navigator var="navi">
     <ons-page>
       <ons-toolbar>
@@ -43,15 +44,10 @@
         </ons-list-item>
       </ons-list>
 
-      <div style="padding: 10px 9px">
-          <ons-button modifier="large" style="margin: 0 auto;">
-            Send
-          </ons-button>
-        </div>
-
     </ons-page>
   </ons-navigator>
 
+  <!-- WHO -->
   <ons-template id="who.html">
     <ons-page ng-controller="DetailController">
 
@@ -89,6 +85,7 @@
     </ons-page>
   </ons-template>
 
+  <!-- WHAT -->
   <ons-template id="what.html">
     <ons-page ng-controller="DetailController">
 
@@ -109,12 +106,31 @@
                 <span class="item-title">{{item.title}}</span>
                 <span class="item-label">  {{item.sub}}</span>
               </header>
+
               <br>
               <p class="item-desc">{{item.one}}</p>
               <br>
-              <p class="item-desc">{{item.two}}</p>
+              <p class="item-title">{{item.two}}</p>
+              <br>
+              <p class="item-desc">{{item.three}}</p>
 
               <br>
+              <p class="item-desc">{{item.four}}</p>
+              <br>
+              <p class="item-title">{{item.five}}</p>
+              <br>
+              <p class="item-desc">{{item.six}}</p>
+
+              <br>
+              <p class="item-desc">{{item.seven}}</p>
+              <br>
+              <p class="item-title">{{item.eight}}</p>
+              <br>
+              <p class="item-desc">{{item.nine}}</p>
+
+              <br>
+              <br>
+
             </ons-col>
           </ons-row>
         </ons-list-item>

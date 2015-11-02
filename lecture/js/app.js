@@ -55,7 +55,14 @@
               title: 'WHAT',
               sub: 'is it?',
               one: 'Dan would say:',
-              two: '"the discipline of defining the behaviour of products and systems that users interact with"'
+              two: '"Interaction Design is about behaviour, how things work. I push a button on my mobile phone, and something happens. Defining what happens when a person uses a product or a service is what interaction designers do."',
+              three: ' ~ Dan Saffer',
+              four: 'Liz would ask:',
+              five: '"Is IxD just about technology, or can it involve other types of products?"',
+              six: ' ~ Liz Danzico',
+              seven: 'Dan would add:',
+              eight: '"Most interaction designers work on software, websites, or other technology like mobile devices. But interaction designers can also design products or services that have little or no technology in them."',
+              nine: ' ~ Dan Saffer'
           },
           {
               title: 'WHERE',
