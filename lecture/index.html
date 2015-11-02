@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>IXD</title>
+
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+  <link rel="stylesheet" href="styles/app.css"/>
+  <link rel="stylesheet" href="styles/onsen-css-components-sunshine-theme.css">
+
+  <script src="lib/onsen/js/angular/angular.js"></script>
+  <script src="lib/onsen/js/onsenui.js"></script>
+
+  <script src="js/app.js"></script>
+  <script>
+    ons.ready(function() {
+    });
+  </script>
+
+</head>
+
+<body ng-controller="AppController">
+
+  <ons-navigator var="navi">
+    <ons-page>
+      <ons-toolbar>
+        <div class="center"> INTERACTION DESIGN </div>
+      </ons-toolbar>
+
+      <ons-list ng-controller="MasterController">
+        <ons-list-item modifier="chevron" class="item" ng-repeat="item in items" ng-click="showDetail($index)">
+          <ons-row>
+              <ons-col>
+                  <header style="margin:10px">
+                      <p class="item-title">{{item.title}}</p>
+                      <p class ="item-sub">{{item.sub}}</p>
+                  </header>
+              </ons-col>
+          </ons-row>
+        </ons-list-item>
+      </ons-list>
+
+      <div style="padding: 10px 9px">
+          <ons-button modifier="large" style="margin: 0 auto;">
+            Send
+          </ons-button>
+        </div>
+
+    </ons-page>
+  </ons-navigator>
+
+  <ons-template id="who.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <br>
+              <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">  {{item.sub}}</span>
+              </header>
+              <br>
+              <p class="item-desc">{{item.one}}</p>
+              <br>
+              <p class="item-desc">{{item.two}}</p>
+
+              <br>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="what.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <br>
+              <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">  {{item.sub}}</span>
+              </header>
+              <br>
+              <p class="item-desc">{{item.one}}</p>
+              <br>
+              <p class="item-desc">{{item.two}}</p>
+
+              <br>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+</body>
+</html>
