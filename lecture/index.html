@@ -69,7 +69,7 @@
               <br>
               <header>
                 <span class="item-title">{{item.title}}</span>
-                <span class="item-label">  {{item.sub}}</span>
+                <span class="item-sub">{{item.sub}}</span>
               </header>
 
               <br>
@@ -121,7 +121,7 @@
               <br>
               <header>
                 <span class="item-title">{{item.title}}</span>
-                <span class="item-label">  {{item.sub}}</span>
+                <span class="item-sub">{{item.sub}}</span>
               </header>
 
               <br>
@@ -178,29 +178,18 @@
               <br>
               <header>
                 <span class="item-title">{{item.title}}</span>
-                <span class="item-label">  {{item.sub}}</span>
+                <span class="item-sub">{{item.sub}}</span>
               </header>
 
               <br>
-              <p class="item-desc">{{item.one}}</p>
+              <p class="item-title" id="ucd" ng-click="show('#ucd')">{{item.one}}</p>
               <br>
-              <p class="item-title">{{item.two}}</p>
+              <p class="item-title" id="acd" ng-click="show('#acd')">{{item.two}}</p>
               <br>
-              <p class="item-desc">{{item.three}}</p>
+              <p class="item-title" id="sys" ng-click="show('#sys')">{{item.three}}</p>
+              <br>
+              <p class="item-title" id="gen" ng-click="show('#gen')">{{item.four}}</p>
 
-              <br>
-              <p class="item-desc">{{item.four}}</p>
-              <br>
-              <p class="item-title">{{item.five}}</p>
-              <br>
-              <p class="item-desc">{{item.six}}</p>
-
-              <br>
-              <p class="item-desc">{{item.seven}}</p>
-              <br>
-              <p class="item-title">{{item.eight}}</p>
-              <br>
-              <p class="item-desc">{{item.nine}}</p>
 
               <br>
               <br>
@@ -215,6 +204,16 @@
 
     </ons-page>
   </ons-template>
+
+  <!-- POPOVER -->
+  <script type="text/ons-template" id="popover.html">
+  <ons-popover direction="up down" cancelable>
+    <div style="text-align: center; opacity: 0.5; width: 300px; height: 300px;">
+      <p>This is a popover!</p>
+      <p><small>Click the background to remove the popover.</small></p>
+    </div>
+  </ons-popover>
+</script>
 
   <!-- HOW -->
   <ons-template id="how.html">
@@ -235,23 +234,37 @@
               <br>
               <header>
                 <span class="item-title">{{item.title}}</span>
-                <span class="item-label">  {{item.sub}}</span>
+                <span class="item-sub">{{item.sub}}</span>
               </header>
 
               <br>
               <ons-list>
-                <ons-list-header></ons-list-header>
-                <ons-list-item><p class="item-desc">{{item.one}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.two}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.three}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.four}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.five}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.six}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.seven}}</p></ons-list-item>
-                <ons-list-item><p class="item-desc">{{item.eight}}</p></ons-list-item>
+                <ons-list-header><p class="item-head">THIS IS WHAT AN IxD PROCESS LOOKS LIKE:</p></ons-list-header>
+                <ons-list-item ng-click="alert('what is the problem and opportunity here?')" modifier="tappable">
+                  <p class="item-line">{{item.one}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('')" modifier="tappable">
+                  <p class="item-line">{{item.two}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('http://lmgtfy.com/?q=ethnographic+research')" modifier="tappable">
+                  <p class="item-line">{{item.three}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('')" modifier="tappable">
+                  <p class="item-line">{{item.four}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('Wireframes')" modifier="tappable">
+                  <p class="item-line">{{item.five}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('')" modifier="tappable">
+                  <p class="item-line">{{item.six}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('User Documents')" modifier="tappable">
+                  <p class="item-line">{{item.seven}}</p>
+                </ons-list-item>
+                <ons-list-item ng-click="alert('')" modifier="tappable">
+                  <p class="item-line">{{item.eight}}</p>
+                </ons-list-item>
               </ons-list>
-
-              <br>
               <br>
 
             </ons-col>

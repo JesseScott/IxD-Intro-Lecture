@@ -8,6 +8,21 @@
 
   module.controller('DetailController', function($scope, $data) {
     $scope.item = $data.selectedItem;
+
+    // Alerts
+    $scope.alert = function(msg) {
+      ons.notification.alert({message: msg});
+    }
+
+    // Popovers
+    ons.createPopover('popover.html').then(function(popover) {
+      $scope.popover = popover;
+    });
+
+    $scope.show = function(e) {
+      $scope.popover.show(e);
+    };
+
   });
 
   module.controller('MasterController', function($scope, $data) {
@@ -28,12 +43,6 @@
           page = 'why.html';
           break;
         case 3:
-          page = 'how.html';
-          break;
-        case 4:
-          page = 'why.html';
-          break;
-        case 5:
           page = 'how.html';
           break;
       }
