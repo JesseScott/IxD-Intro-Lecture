@@ -22,20 +22,20 @@
           page = 'who.html';
           break;
         case 1:
-            page = 'what.html';
-            break;
+          page = 'what.html';
+          break;
         case 2:
-          page = 'where.html';
+          page = 'why.html';
           break;
         case 3:
-            page = 'when.html';
-            break;
+          page = 'how.html';
+          break;
         case 4:
           page = 'why.html';
           break;
         case 5:
-            page = 'how.html';
-            break;
+          page = 'how.html';
+          break;
       }
       $scope.navi.pushPage(page, {title : selectedItem.title});
     };

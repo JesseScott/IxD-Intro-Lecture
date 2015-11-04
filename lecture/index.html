@@ -29,7 +29,7 @@
   <ons-navigator var="navi">
     <ons-page>
       <ons-toolbar>
-        <div class="center"> INTERACTION DESIGN </div>
+        <div class="center"> Interaction Design Lecture | DESN 200 </div>
       </ons-toolbar>
 
       <ons-list ng-controller="MasterController">
@@ -37,7 +37,9 @@
           <ons-row>
               <ons-col>
                   <header style="margin:10px">
+                      <br>
                       <p class="item-title">{{item.title}}</p>
+                      <br>
                       <p class ="item-sub">{{item.sub}}</p>
                   </header>
               </ons-col>
@@ -48,7 +50,7 @@
     </ons-page>
   </ons-navigator>
 
-  <!-- WHO -->
+  <!-- WHO-->
   <ons-template id="who.html">
     <ons-page ng-controller="DetailController">
 
@@ -142,6 +144,112 @@
               <p class="item-title">{{item.eight}}</p>
               <br>
               <p class="item-desc">{{item.nine}}</p>
+
+              <br>
+              <br>
+
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <!-- WHY -->
+  <ons-template id="why.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <br>
+              <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">  {{item.sub}}</span>
+              </header>
+
+              <br>
+              <p class="item-desc">{{item.one}}</p>
+              <br>
+              <p class="item-title">{{item.two}}</p>
+              <br>
+              <p class="item-desc">{{item.three}}</p>
+
+              <br>
+              <p class="item-desc">{{item.four}}</p>
+              <br>
+              <p class="item-title">{{item.five}}</p>
+              <br>
+              <p class="item-desc">{{item.six}}</p>
+
+              <br>
+              <p class="item-desc">{{item.seven}}</p>
+              <br>
+              <p class="item-title">{{item.eight}}</p>
+              <br>
+              <p class="item-desc">{{item.nine}}</p>
+
+              <br>
+              <br>
+
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <!-- HOW -->
+  <ons-template id="how.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <br>
+              <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">  {{item.sub}}</span>
+              </header>
+
+              <br>
+              <ons-list>
+                <ons-list-header></ons-list-header>
+                <ons-list-item><p class="item-desc">{{item.one}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.two}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.three}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.four}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.five}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.six}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.seven}}</p></ons-list-item>
+                <ons-list-item><p class="item-desc">{{item.eight}}</p></ons-list-item>
+              </ons-list>
 
               <br>
               <br>
