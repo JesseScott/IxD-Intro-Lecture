@@ -11,10 +11,11 @@ angular.module('factory', [])
         {
             title: 'WHO',
             sub: 'in which we uncover who really does interaction design?',
-            one: 'Good question. I would argue that we all do it - designers of all sorts. Some of it is conscious, some of it unconscious. In fact, Interaction Design is made up from several different disciplines itself... so the people that work in IxD come from very diverse backgrounds!',
-            two: 'Just take a look at this picture:',
-            three: 'Or this one:',
-            four: '... or this one:'
+            one: 'Who does Interaction Design? Good question. I would argue that we all do it - designers of all sorts. Some of it is conscious, some of it unconscious.',
+            two: 'In fact, Interaction Design is made up from several different disciplines itself... so the people that work in IxD come from very diverse backgrounds!',
+            three: 'Just take a look at this picture:',
+            four: 'Or this one:',
+            five: '... or this one:'
         },
         {
             title: 'WHAT',
