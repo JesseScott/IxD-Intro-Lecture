@@ -47,8 +47,16 @@ angular.module('factory', [])
             four: 'Test',
             five: 'Wireframes!',
             six: 'Test',
-            seven: 'User (Personas | Stories | Flows | Scenarios | Task Models|etc) ',
+            seven: 'User (Personas | Stories | Flows | Scenarios | Task Models|etc)',
             eight: 'Te-- ... you get the picture'
+        },
+        {
+            title: 'UI',
+            sub: 'is it just about making it look pretty?',
+            one: '',
+            two: '',
+            three: '',
+            four: ''
         }
     ];
 

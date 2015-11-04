@@ -25,8 +25,18 @@
 
   });
 
-  module.controller('MasterController', function($scope, $data) {
+  module.controller('MasterController', function($scope, $data, $timeout) {
     $scope.items = $data.items;
+
+    $scope.load = function($done) {
+      console.log('starting...');
+      console.log(loader.getCurrentState());
+      $timeout(function() {
+        console.log('going...');
+        //$scope.items.unshift($scope.items.length + 1);
+        $done();
+      }, 1000);
+    };
 
     $scope.showDetail = function(index) {
       var selectedItem = $data.items[index];
@@ -44,6 +54,9 @@
           break;
         case 3:
           page = 'how.html';
+          break;
+        case 4:
+          page = 'ui.html';
           break;
       }
       $scope.navi.pushPage(page, {title : selectedItem.title});
