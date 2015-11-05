@@ -58,6 +58,9 @@
         case 4:
           page = 'ui.html';
           break;
+        case 5:
+          page = 'ctrl.html';
+          break;
       }
       $scope.navi.pushPage(page, {title : selectedItem.title});
     };

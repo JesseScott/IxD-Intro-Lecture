@@ -57,7 +57,15 @@ angular.module('factory', [])
             two: '',
             three: '',
             four: ''
-        }
+        },
+        {
+            title: 'INPUTS',
+            sub: 'how do i turn this thing on?',
+            one: '',
+            two: '',
+            three: '',
+            four: ''
+        },
     ];
 
     return data;

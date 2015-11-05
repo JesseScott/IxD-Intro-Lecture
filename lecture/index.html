@@ -283,15 +283,81 @@
             </ons-col>
             <ons-col>
 
+              <br>
+              <ons-list>
+                <ons-list-item> <p class="item-line"> We still use Grids. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> We still use Hierarchy. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> We still use Typography. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line">  </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> But now we have things like States. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> But now we have things like Animation. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> But now we have things like Dynamic Content. </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> But now we have things like Fitts Law. </p> </ons-list-item>
+                <ons-list-item modifier="tappable">
+                  <label class="radio-button radio-button--list-item">
+                    <input type="radio" name="a">
+                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                    GUI
+                  </label>
+                </ons-list-item>
+                <ons-list-item modifier="tappable">
+                  <label class="radio-button radio-button--list-item">
+                    <input type="radio" name="a">
+                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                    NUI
+                  </label>
+                </ons-list-item>
+                <ons-list-item modifier="tappable">
+                  <label class="radio-button radio-button--list-item">
+                    <input type="radio" name="a">
+                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                    TUI
+                  </label>
+                </ons-list-item>
+                <ons-list-item modifier="tappable">
+                  <label class="radio-button radio-button--list-item">
+                    <input type="radio" name="a">
+                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                    VUI
+                  </label>
+                </ons-list-item>
+              </ons-list>
+              <br>
 
             </ons-col>
           </ons-row>
         </ons-list-item>
-
       </ons-list>
 
       <br>
 
+    </ons-page>
+  </ons-template>
+
+  <!-- INPUT -->
+  <ons-template id="ctrl.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+
+
+
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+      </ons-list>
+      <br>
     </ons-page>
   </ons-template>
 
