@@ -51,20 +51,27 @@ angular.module('factory', [])
             eight: 'Te-- ... you get the picture'
         },
         {
-            title: 'UI',
+            title: 'DESIGN',
             sub: 'is it just about making it look pretty?',
-            one: '',
-            two: '',
-            three: '',
-            four: ''
+            one: 'We still Design with Grids.',
+            two: 'We still pay attention to Visual Hierarchy.',
+            three: 'We still follow the same Typographic rules.',
+            four: 'But now we have things like States.',
+            five: 'But now we have things like Animation.',
+            six: 'But now we have things like Dynamic Content.',
+            seven: 'But now we have things like Fitts Law.'
+        },
+        {
+            title: '-UI',
+            sub: 'alphabet soup',
         },
         {
             title: 'INPUTS',
             sub: 'how do i turn this thing on?',
-            one: '',
-            two: '',
-            three: '',
-            four: ''
+            one: 'switch',
+            two: 'button',
+            three: 'radio button',
+            four: 'dial'
         },
     ];
 

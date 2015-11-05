@@ -23,6 +23,11 @@
       $scope.popover.show(e);
     };
 
+    // Checkboxes
+    $scope.check = function() {
+      console.log('check');
+    };
+
   });
 
   module.controller('MasterController', function($scope, $data, $timeout) {
@@ -56,10 +61,13 @@
           page = 'how.html';
           break;
         case 4:
-          page = 'ui.html';
+          page = 'design.html';
           break;
         case 5:
-          page = 'ctrl.html';
+          page = 'ui.html';
+          break;
+        case 6:
+          page = 'input.html';
           break;
       }
       $scope.navi.pushPage(page, {title : selectedItem.title});

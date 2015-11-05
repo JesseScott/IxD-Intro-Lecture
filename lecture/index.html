@@ -95,13 +95,13 @@
 
               <br>
             </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
           </ons-row>
         </ons-list-item>
-
       </ons-list>
-
       <br>
-
     </ons-page>
   </ons-template>
 
@@ -121,7 +121,6 @@
               <div class="item-thum"></div>
             </ons-col>
             <ons-col>
-
               <br>
               <p class="item-desc">{{item.one}}</p>
               <br>
@@ -145,7 +144,9 @@
 
               <br>
               <br>
-
+            </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
             </ons-col>
           </ons-row>
         </ons-list-item>
@@ -173,7 +174,6 @@
               <div class="item-thum"></div>
             </ons-col>
             <ons-col>
-
               <br>
               <p class="item-title" id="ucd" ng-click="show('#ucd')">{{item.one}}</p>
               <br>
@@ -182,11 +182,11 @@
               <p class="item-title" id="sys" ng-click="show('#sys')">{{item.three}}</p>
               <br>
               <p class="item-title" id="gen" ng-click="show('#gen')">{{item.four}}</p>
-
-
               <br>
               <br>
-
+            </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
             </ons-col>
           </ons-row>
         </ons-list-item>
@@ -224,7 +224,6 @@
               <div class="item-thum"></div>
             </ons-col>
             <ons-col>
-
               <br>
               <ons-list>
                 <ons-list-header><p class="item-head">THIS IS WHAT AN IxD PROCESS LOOKS LIKE:</p></ons-list-header>
@@ -254,12 +253,48 @@
                 </ons-list-item>
               </ons-list>
               <br>
-
+            </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
             </ons-col>
           </ons-row>
         </ons-list-item>
 
       </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <!-- DESIGN -->
+  <ons-template id="design.html">
+    <ons-page ng-controller="DetailController">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <br>
+      <br>
+
+      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 800px" var="carousel">
+
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.one}}</div>
+          <img src="img/ui_grid.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.two}}</div>
+          <img src="img/ui_hierarchy.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.three}}</div>
+          <img src="img/ui_typography.jpg" style="height:100%;">
+        </ons-carousel-item>
+
+      </ons-carousel>
 
       <br>
 
@@ -275,59 +310,76 @@
         <div class="center">{{item.title}}</div>
       </ons-toolbar>
 
-      <ons-list modifier="inset" style="margin-top: 10px">
-        <ons-list-item class="item">
-          <ons-row>
-            <ons-col width="60px">
-              <div class="item-thum"></div>
-            </ons-col>
-            <ons-col>
+      <br>
+      <br>
 
-              <br>
-              <ons-list>
-                <ons-list-item> <p class="item-line"> We still use Grids. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> We still use Hierarchy. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> We still use Typography. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line">  </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> But now we have things like States. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> But now we have things like Animation. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> But now we have things like Dynamic Content. </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> But now we have things like Fitts Law. </p> </ons-list-item>
-                <ons-list-item modifier="tappable">
-                  <label class="radio-button radio-button--list-item">
-                    <input type="radio" name="a">
-                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
-                    GUI
-                  </label>
-                </ons-list-item>
-                <ons-list-item modifier="tappable">
-                  <label class="radio-button radio-button--list-item">
-                    <input type="radio" name="a">
-                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
-                    NUI
-                  </label>
-                </ons-list-item>
-                <ons-list-item modifier="tappable">
-                  <label class="radio-button radio-button--list-item">
-                    <input type="radio" name="a">
-                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
-                    TUI
-                  </label>
-                </ons-list-item>
-                <ons-list-item modifier="tappable">
-                  <label class="radio-button radio-button--list-item">
-                    <input type="radio" name="a">
-                    <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
-                    VUI
-                  </label>
-                </ons-list-item>
-              </ons-list>
-              <br>
+      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 800px" var="carousel">
 
-            </ons-col>
-          </ons-row>
-        </ons-list-item>
-      </ons-list>
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">GUI</div>
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_1.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_2.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_3.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_4.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_5.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <img src="img/gui_6.png" style="height:100%;">
+        </ons-carousel-item>
+
+
+        <ons-carousel-item style="background-color: #085078;">
+          <div class="carousel-label">NUI</div>
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #085078;">
+          <img src="img/nui_1.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #085078;">
+          <img src="img/nui_2.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #085078;">
+          <img src="img/nui_3.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #085078;">
+          <img src="img/nui_4.jpg" style="height:100%;">
+        </ons-carousel-item>
+
+
+        <ons-carousel-item style="background-color: #D38312;">
+          <div class="carousel-label">VUI</div>
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #D38312;">
+          <img src="img/vui_1.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #D38312;">
+          <img src="img/vui_2.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: #D38312;">
+          <img src="img/vui_3.jpg" style="height:100%;">
+        </ons-carousel-item>
+
+
+        <ons-carousel-item style="background-color: white;">
+          <img src="img/huey.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: white;">
+          <img src="img/dewey.png" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: white;">
+          <img src="img/louie.png" style="height:100%;">
+        </ons-carousel-item>
+
+      </ons-carousel>
 
       <br>
 
@@ -335,7 +387,7 @@
   </ons-template>
 
   <!-- INPUT -->
-  <ons-template id="ctrl.html">
+  <ons-template id="input.html">
     <ons-page ng-controller="DetailController">
 
       <ons-toolbar>
@@ -350,14 +402,23 @@
               <div class="item-thum"></div>
             </ons-col>
             <ons-col>
+              <br>
+              <ons-list>
+                <ons-list-item> <p class="item-line"> {{item.one}} </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> {{item.two}} </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> {{item.three}} </p> </ons-list-item>
+                <ons-list-item> <p class="item-line"> {{item.four}} </p> </ons-list-item>
+              </ons-list>
+              <br>
 
-
-
+            </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
             </ons-col>
           </ons-row>
         </ons-list-item>
       </ons-list>
-      <br>
+
     </ons-page>
   </ons-template>
 
