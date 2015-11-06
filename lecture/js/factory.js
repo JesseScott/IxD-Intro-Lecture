@@ -9,6 +9,19 @@ angular.module('factory', [])
 
     data.items = [
         {
+            title: 'WHAT',
+            sub: 'but... what is it?',
+            one: 'Dan would say:',
+            two: '"Interaction Design is about behaviour, how things work. I push a button on my mobile phone, and something happens. Defining what happens when a person uses a product or a service is what interaction designers do."',
+            three: ' ~ Dan Saffer',
+            four: 'Gillian would put it this way:',
+            five: '"If i were to sum up Interaction Design in a sentence, I would say that its about shaping our everyday life through digital artifacts - for work, for play, and for entertainment."',
+            six: ' ~ Gillian Crampton Smith',
+            seven: 'Chris would define it as such:',
+            eight: '"the exchange of information between two or more active participants, an iterative process of listening, thinking, and speaking between two or more actors"',
+            nine: ' ~ Chris Crawford'
+        },
+        {
             title: 'WHO',
             sub: 'in which we uncover who really does interaction design?',
             one: 'Who does Interaction Design? Good question. I would argue that we all do it - designers of all sorts. Some of it is conscious, some of it unconscious.',
@@ -16,27 +29,6 @@ angular.module('factory', [])
             three: 'Just take a look at this picture:',
             four: 'Or this one:',
             five: '... or this one:'
-        },
-        {
-            title: 'WHAT',
-            sub: 'but... what is it?',
-            one: 'Dan would say:',
-            two: '"Interaction Design is about behaviour, how things work. I push a button on my mobile phone, and something happens. Defining what happens when a person uses a product or a service is what interaction designers do."',
-            three: ' ~ Dan Saffer',
-            four: 'Liz would ask:',
-            five: '"Is IxD just about technology, or can it involve other types of products?"',
-            six: ' ~ Liz Danzico',
-            seven: 'Dan would add:',
-            eight: '"Most interaction designers work on software, websites, or other technology like mobile devices. But interaction designers can also design products or services that have little or no technology in them."',
-            nine: ' ~ Dan Saffer'
-        },
-        {
-            title: 'WHY',
-            sub: 'where we learn that "its all about the users"',
-            one: 'User Centered Design',
-            two: 'Activity Centered Design',
-            three: 'System Design',
-            four: 'Genius Design'
         },
         {
             title: 'HOW',
@@ -77,8 +69,8 @@ angular.module('factory', [])
             sub: 'you may ask yourself',
             one: 'What is that beautiful house?',
             two: 'Where does that highway go?',
-            three: 'How do I create this experience?',
-            four: 'How do I engage my users?'
+            three: 'How do I craft this experience?',
+            four: 'How can I get my users to dance?'
         },
     ];
 

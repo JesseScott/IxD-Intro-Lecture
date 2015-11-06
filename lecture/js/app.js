@@ -49,27 +49,24 @@
       var page = '';
       switch(index) {
         case 0:
-          page = 'who.html';
-          break;
-        case 1:
           page = 'what.html';
           break;
-        case 2:
-          page = 'why.html';
+        case 1:
+          page = 'who.html';
           break;
-        case 3:
+        case 2:
           page = 'how.html';
           break;
-        case 4:
+        case 3:
           page = 'design.html';
           break;
-        case 5:
+        case 4:
           page = 'ui.html';
           break;
-        case 6:
+        case 5:
           page = 'input.html';
           break;
-        case 7:
+        case 6:
           page = 'question.html';
           break;
       }
