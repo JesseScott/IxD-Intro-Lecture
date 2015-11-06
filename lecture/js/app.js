@@ -14,15 +14,6 @@
       ons.notification.alert({message: msg});
     }
 
-    // Popovers
-    ons.createPopover('popover.html').then(function(popover) {
-      $scope.popover = popover;
-    });
-
-    $scope.show = function(e) {
-      $scope.popover.show(e);
-    };
-
     // Checkboxes
     $scope.check = function() {
       console.log('check');
@@ -67,6 +58,9 @@
           page = 'input.html';
           break;
         case 6:
+          page = 'examples.html';
+          break;
+        case 7:
           page = 'question.html';
           break;
       }

@@ -65,6 +65,14 @@ angular.module('factory', [])
             four: 'dial'
         },
         {
+            title: 'EXAMPLES',
+            sub: 'show me the money',
+            one: 'switch',
+            two: 'button',
+            three: 'radio button',
+            four: 'dial'
+        },
+        {
             title: 'QUESTIONS',
             sub: 'you may ask yourself',
             one: 'What is that beautiful house?',

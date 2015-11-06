@@ -206,7 +206,7 @@
                 <ons-list-item ng-click="alert('Google Jacob Nielsen. Now.')" modifier="tappable">
                   <p class="item-line">Usability Heuristics</p>
                 </ons-list-item>
-                <ons-list-item ng-click="alert('Don Norman. Google him too. Now. Also, we totally stole this one from ID...')" modifier="tappable">
+                <ons-list-item ng-click="alert('Don Norman. Google him too. Also, we totally stole this idea from ID...')" modifier="tappable">
                   <p class="item-line">Affordances</p>
                 </ons-list-item>
                 <ons-list-item ng-click="alert('More and more, we have (what we think is) an intuitive way of approaching a designed experience or object...')" modifier="tappable">
@@ -401,13 +401,43 @@
                 </ons-list-item>
               </ons-list>
               <br>
+              <br>
+            </ons-col>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <!-- EXAMPLES -->
+  <ons-template id="examples.html">
+    <ons-page ng-controller="DetailController" width="1000px">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px">
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <br>
               <ons-list>
-                <ons-list-header><p class="item-head">And some are still emerging as part of new interface paradaigms</p></ons-list-header>
                 <ons-list-item>
                   <br>
                   <p class="item-title">Vision + Presence</p>
                   <br>
-                  <iframe src="https://player.vimeo.com/video/43306909?color=cfcaca"  width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/61174060?color=cfcaca"  width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <iframe src="https://player.vimeo.com/video/102507009?color=cfcaca" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <iframe src="https://player.vimeo.com/video/8525186?color=cfcaca"   width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <iframe src="https://player.vimeo.com/video/96549043?color=cfcaca"  width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
