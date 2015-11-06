@@ -69,6 +69,9 @@
         case 6:
           page = 'input.html';
           break;
+        case 7:
+          page = 'question.html';
+          break;
       }
       $scope.navi.pushPage(page, {title : selectedItem.title});
     };

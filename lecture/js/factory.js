@@ -56,10 +56,9 @@ angular.module('factory', [])
             one: 'We still Design with Grids.',
             two: 'We still pay attention to Visual Hierarchy.',
             three: 'We still follow the same Typographic rules.',
-            four: 'But now we have things like States.',
-            five: 'But now we have things like Animation.',
-            six: 'But now we have things like Dynamic Content.',
-            seven: 'But now we have things like Fitts Law.'
+            four: 'But now we have things like States & Animation',
+            five: 'But now we have things like Context.',
+            six: 'But now we have things like Fitts Law.',
         },
         {
             title: '-UI',
@@ -72,6 +71,14 @@ angular.module('factory', [])
             two: 'button',
             three: 'radio button',
             four: 'dial'
+        },
+        {
+            title: 'QUESTIONS',
+            sub: 'you may ask yourself',
+            one: 'What is that beautiful house?',
+            two: 'Where does that highway go?',
+            three: 'How do I create this experience?',
+            four: 'How do I engage my users?'
         },
     ];
 

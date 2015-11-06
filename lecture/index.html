@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
   <title>IXD</title>
 
@@ -27,7 +28,7 @@
 
   <!-- MASTER -->
   <ons-navigator var="navi">
-    <ons-page>
+    <ons-page width="1000px">
       <ons-toolbar>
         <div class="center"> Interaction Design Lecture | DESN 200 </div>
       </ons-toolbar>
@@ -60,7 +61,7 @@
 
   <!-- WHO-->
   <ons-template id="who.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -81,19 +82,28 @@
               <br>
               <p class="item-line">{{item.three}}</p>
               <br>
-              <img src="img/venn_1.jpg" style="width:100%">
+              <img src="img/venn_1.jpg" style="width:60%">
 
               <br>
               <p class="item-line">{{item.four}}</p>
               <br>
-              <img src="img/venn_2.jpg" style="width:100%">
+              <img src="img/venn_2.jpg" style="width:60%">
 
               <br>
               <p class="item-line">{{item.five}}</p>
               <br>
-              <img src="img/venn_3.jpg" style="width:100%">
+              <img src="img/venn_3.jpg" style="width:60%">
 
               <br>
+              <br>
+              <p class="item-line">But... more importantly, we all take part in IxD.</p>
+              <p class="item-line">Every day, everytime, everywhere... </p>
+              <button class="button button--outline" style="width:50%" ng-click="showKeanu = ! showKeanu">Everywhere?</button><br>
+              <br>
+              <img ng-show="showKeanu" src="img/_keanu.jpg" style="width:30%">
+              <br>
+              <br>
+
             </ons-col>
             <ons-col width="60px">
               <div class="item-thum"></div>
@@ -107,7 +117,7 @@
 
   <!-- WHAT -->
   <ons-template id="what.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -153,14 +163,12 @@
 
       </ons-list>
 
-      <br>
-
     </ons-page>
   </ons-template>
 
   <!-- WHY -->
   <ons-template id="why.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -201,7 +209,7 @@
   <!-- POPOVER -->
   <script type="text/ons-template" id="popover.html">
   <ons-popover direction="up down" cancelable>
-    <div style="text-align: center; opacity: 0.5; width: 300px; height: 300px;">
+    <div style="text-align: center; opacity: 0.5; width: 600px; height: 300px;">
       <p>This is a popover!</p>
       <p><small>Click the background to remove the popover.</small></p>
     </div>
@@ -210,7 +218,7 @@
 
   <!-- HOW -->
   <ons-template id="how.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -259,7 +267,6 @@
             </ons-col>
           </ons-row>
         </ons-list-item>
-
       </ons-list>
 
       <br>
@@ -269,41 +276,42 @@
 
   <!-- DESIGN -->
   <ons-template id="design.html">
-    <ons-page ng-controller="DetailController">
-
+    <ons-page ng-controller="DetailController" width="1000px">
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
         <div class="center">{{item.title}}</div>
       </ons-toolbar>
-
       <br>
       <br>
-
-      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 800px" var="carousel">
-
+      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 600px" var="carousel">
         <ons-carousel-item style="background-color: gray;">
-          <div class="carousel-label">{{item.one}}</div>
-          <img src="img/ui_grid.jpg" style="height:100%;">
+          <img src="img/ui_grid.jpg" height="100%">
         </ons-carousel-item>
         <ons-carousel-item style="background-color: gray;">
-          <div class="carousel-label">{{item.two}}</div>
-          <img src="img/ui_hierarchy.jpg" style="height:100%;">
+          <img src="img/ui_hierarchy.jpg" height="100%">
         </ons-carousel-item>
         <ons-carousel-item style="background-color: gray;">
-          <div class="carousel-label">{{item.three}}</div>
-          <img src="img/ui_typography.jpg" style="height:100%;">
+          <img src="img/ui_typography.jpg" height="100%">
         </ons-carousel-item>
 
+        <ons-carousel-item style="background-color: orange;">
+          <img src="img/ui_anim.gif" height="100%">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: orange;">
+          <img src="img/ui_personal.gif" height="100%">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: orange;">
+          <img src="img/ui_fitts.jpg" height="100%">
+        </ons-carousel-item>
       </ons-carousel>
-
       <br>
-
+      <br>
     </ons-page>
   </ons-template>
 
   <!-- UI -->
   <ons-template id="ui.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -312,8 +320,7 @@
 
       <br>
       <br>
-
-      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 800px" var="carousel">
+      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 600px" var="carousel">
 
         <ons-carousel-item style="background-color: gray;">
           <div class="carousel-label">GUI</div>
@@ -330,16 +337,9 @@
         <ons-carousel-item style="background-color: gray;">
           <img src="img/gui_4.png" style="height:100%;">
         </ons-carousel-item>
-        <ons-carousel-item style="background-color: gray;">
-          <img src="img/gui_5.png" style="height:100%;">
-        </ons-carousel-item>
-        <ons-carousel-item style="background-color: gray;">
-          <img src="img/gui_6.png" style="height:100%;">
-        </ons-carousel-item>
-
 
         <ons-carousel-item style="background-color: #085078;">
-          <div class="carousel-label">NUI</div>
+          <div class="carousel-label">NUI / TUI</div>
         </ons-carousel-item>
         <ons-carousel-item style="background-color: #085078;">
           <img src="img/nui_1.jpg" style="height:100%;">
@@ -354,7 +354,6 @@
           <img src="img/nui_4.jpg" style="height:100%;">
         </ons-carousel-item>
 
-
         <ons-carousel-item style="background-color: #D38312;">
           <div class="carousel-label">VUI</div>
         </ons-carousel-item>
@@ -366,17 +365,17 @@
         </ons-carousel-item>
         <ons-carousel-item style="background-color: #D38312;">
           <img src="img/vui_3.jpg" style="height:100%;">
+          <!-- <iframe width="700" height="420" src="https://www.youtube.com/embed/R2IJdfxWtPM" frameborder="0" allowfullscreen></iframe> -->
         </ons-carousel-item>
 
-
         <ons-carousel-item style="background-color: white;">
-          <img src="img/huey.png" style="height:100%;">
+          <img src="img/_huey.png" style="height:100%;">
         </ons-carousel-item>
         <ons-carousel-item style="background-color: white;">
-          <img src="img/dewey.png" style="height:100%;">
+          <img src="img/_dewey.png" style="height:100%;">
         </ons-carousel-item>
         <ons-carousel-item style="background-color: white;">
-          <img src="img/louie.png" style="height:100%;">
+          <img src="img/_louie.png" style="height:100%;">
         </ons-carousel-item>
 
       </ons-carousel>
@@ -388,7 +387,7 @@
 
   <!-- INPUT -->
   <ons-template id="input.html">
-    <ons-page ng-controller="DetailController">
+    <ons-page ng-controller="DetailController" width="1000px">
 
       <ons-toolbar>
         <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -404,13 +403,67 @@
             <ons-col>
               <br>
               <ons-list>
-                <ons-list-item> <p class="item-line"> {{item.one}} </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> {{item.two}} </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> {{item.three}} </p> </ons-list-item>
-                <ons-list-item> <p class="item-line"> {{item.four}} </p> </ons-list-item>
+                <ons-list-header><p class="item-head">Certain UI elements directly relate to the physical world</p></ons-list-header>
+                <ons-list-item>
+                    <br>
+                    <button class="button button--outline">Button</button>
+                    <br>
+                    <label class="checkbox checkbox--list-item">
+                    <input type="checkbox">
+                    <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                    </label>
+                    <br>
+                    <label class="switch">
+                    <input type="checkbox" class="switch__input">
+                    <div class="switch__toggle"></div>
+                    </label>
+                    <br>
+                    <input type="range" class="range">
+                </ons-list-item>
               </ons-list>
               <br>
+              <ons-list>
+                <ons-list-header><p class="item-head">Some were developed in the context of games (but live on in a broader context)</p></ons-list-header>
+                <ons-list-item>
+                    <iframe src="http://giphy.com/embed/qBnvaSMx4c9O" width="480" height="480" frameBorder="0" class="giphy-embed" ></iframe>
+                    <iframe src="http://giphy.com/embed/WPhjbtMrDZkBi" width="480" height="314" frameBorder="0" class="giphy-embed" ></iframe>
+                    <iframe src="http://giphy.com/embed/S2foJZNnwQFxu" width="480" height="384" frameBorder="0" class="giphy-embed" ></iframe>
+                </ons-list-item>
+              </ons-list>
+              <br>
+              <ons-list>
+                <ons-list-header><p class="item-head">Others have been popularized with the advent of the web (and only make sense there)</p></ons-list-header>
+                <ons-list-item>
+                  <iframe src="img/hamburger_1.gif" width="480" height="384" frameBorder="0" class="giphy-embed" ></iframe>
+                  <iframe src="img/hamburger_2.gif" width="480" height="384" frameBorder="0" class="giphy-embed" ></iframe>
+                  <iframe src="img/dropdown_1.gif" width="480" height="384" frameBorder="0" class="giphy-embed" ></iframe>
+                  <iframe src="img/dropdown_2.gif" width="480" height="384" frameBorder="0" class="giphy-embed" ></iframe>
+                </ons-list-item>
+              </ons-list>
+              <br>
+              <ons-list>
+                <ons-list-header><p class="item-head">And some are still emerging as part of new interface paradaigms</p></ons-list-header>
+                <ons-list-item>
+                  <br>
+                  <p class="item-title">Vision + Presence</p>
+                  <br>
+                  <iframe src="https://player.vimeo.com/video/43306909?color=cfcaca"  width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/102507009?color=cfcaca" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/69879128?color=cfcaca"  width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/8525186?color=cfcaca"   width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </ons-list-item>
+                <ons-list-item>
+                  <br>
+                  <p class="item-title">Embodiment + Physicality</p>
+                  <br>
 
+                  <iframe src="https://player.vimeo.com/video/40980676?color=00f137" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/44005246?color=ffffff" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/28425601?color=ffffff" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                </ons-list-item>
+              </ons-list>
+              <br>
             </ons-col>
             <ons-col width="60px">
               <div class="item-thum"></div>
@@ -419,6 +472,41 @@
         </ons-list-item>
       </ons-list>
 
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+  <!-- QUESTIONS -->
+  <ons-template id="question.html">
+    <ons-page ng-controller="DetailController" width="1000px">
+
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">{{item.title}}</div>
+      </ons-toolbar>
+      <br>
+      <br>
+      <ons-carousel swipeable overscrollable auto-scroll style="width: 100%; height: 800px" var="carousel">
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.one}}</div>
+          <img src="img/ask_1.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.two}}</div>
+          <img src="img/ask_2.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: gray;">
+          <div class="carousel-label">{{item.three}}</div>
+          <img src="img/ask_3.jpg" style="height:100%;">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: orange;">
+          <div class="carousel-label">{{item.four}}</div>
+          <img src="img/ask_4.jpg" style="height:100%;">
+        </ons-carousel-item>
+      </ons-carousel>
+      <br>
+      <br>
     </ons-page>
   </ons-template>
 
